@@ -14,7 +14,7 @@ top: 0;
 background-image:linear-gradient(to right, #E5E5E5,  #E5E5E5);
 border-bottom: 3px solid  #F47806;
 background-color: #FFFF;
-background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); 
 
 h2{
     color: #F47806;

@@ -28,8 +28,8 @@ export default function Login(){
 
     function HandleInput(e){
         e.persist();
-        setFormFill(s => ({
-            ...s,
+        setFormFill(se => ({
+            ...se,
             [e.target.name]: e.target.value
         }));
     }
