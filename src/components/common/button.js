@@ -8,16 +8,19 @@ ${p => p.large? css`
 padding: 8px;
 font-size: 1em;
 padding: 8px;
-width: 100%;
+
 border-radius: 8px;
 ` : css`
-padding: 8px;
-font-size: 1em;
-border-radius: 8px;
-font-weight: bold;
-width: 100%;
+
+width: 163px;
+height: 55px;
 display: block;
-white-space: none;
+padding: 8px;
+width: 50%;
+margin-left: 85px;
+border: 1px solid #ccc;
+
+
 `};
 
 
