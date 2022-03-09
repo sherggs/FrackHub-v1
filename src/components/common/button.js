@@ -11,13 +11,6 @@ padding: 8px;
 
 border-radius: 8px;
 ` : css`
-${'' /* padding: 8px;
-font-size: 1em;
-
-font-weight: bold;
-width: 100%;
-
-white-space: none; */}
 
 width: 163px;
 height: 55px;
