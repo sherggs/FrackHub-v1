@@ -8,15 +8,33 @@ max-width: 400px;
 background: white;
 box-sizing: border-box;
 color: black ;
-border: 1px solid #eee;
 padding: 16px;
 border-radius: 4px;
+margin: auto;
 
 
-.alter{
-    text-align: center;
-    margin: 10px 0;
+
+
+
+input::placeholder {
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+width: 115px;
+height: 28px;
+
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 115%;
+/* identical to box height, or 28px */
+
+letter-spacing: -0.019em;
+
+color: #000000;
 }
+
+
 
 `;
 
@@ -31,7 +49,7 @@ export default function Login(){
         setFormFill(se => ({
             ...se,
             [e.target.name]: e.target.value
-        }));
+        })); 
     }
     function HandleSubmit(e){
         e.preventDefault();
@@ -50,7 +68,7 @@ export default function Login(){
     },[])
     return (  
         <PageLayout>
-        <h1>Login</h1>
+        <h1 className="logHead">Frack Hub</h1>
         <Form onSubmit={HandleSubmit}> 
         {submit? <Spinner /> :
         <>
@@ -64,19 +82,10 @@ export default function Login(){
         name="password"/>
         </>
     }
-        <Button large  type="submit" disabled={submit}>
-            {submit? "loading..." :"Login"} 
+        <Button secondary  type="submit" disabled={submit}>
+            {submit? "loading..." :<h2 className="logText">Login</h2>} 
         </Button>
-        {!submit &&
-        <>
-        <div className="alter">
-            or
-        </div>
-        <Button secondary type="button">
-            Register
-        </Button>
-        </>
-        }
+    
         </Form>
         </PageLayout>
     )

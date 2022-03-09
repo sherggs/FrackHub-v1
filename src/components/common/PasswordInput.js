@@ -7,6 +7,28 @@ const PasswordInputWrapper = styled.div`
     ~div{
         margin-bottom: 8px;
     }
+
+    input::placeholder {
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+width: 115px;
+height: 28px;
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 115%;
+box-sizing: border-box;
+
+/* identical to box height, or 28px */
+
+letter-spacing: -0.019em;
+
+color: #000000;
+
+
+
+}
 `;
 
 
@@ -19,20 +41,34 @@ const PasswordStyle = styled(Input).attrs(() => ({
 `;
 
 const ToggleButton = styled.div`
-    height: 40px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    /* height: 46px;
     font-size: 1em;
     display: flex;
     border-left: 0;
     padding: 7px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    background: white;
-    font-weight: bold;
-    cursor: pointer; 
-    user-select: none;
-    color: black;
+
+    */
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+padding: 4px 8px;
+border: 1px solid #ccc;
+font-size: 1em;
+font-family: 'Inter', sans-serif;
+height: 46px;
+background: #C4C4C4;
+margin-bottom: 16px;
+color: black;
+font-weight: bold;
+border-left: 0;
+border: 1px solid #ccc;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+font-size: 1em;
+user-select: none;
+cursor: pointer; 
+box-sizing: border-box;
+
+
 `;
 
 

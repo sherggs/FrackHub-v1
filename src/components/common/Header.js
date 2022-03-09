@@ -11,11 +11,9 @@ display: flex ;
 padding: 0 16px;
 position: fixed;
 top: 0;
-background-image:linear-gradient(to right, #E5E5E5,  #E5E5E5);
+background-image:linear-gradient(to right, #fff,  #ffff);
 border-bottom: 3px solid  #F47806;
 background-color: #FFFF;
-background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); 
-
 h2{
     color: #F47806;
     padding: 0 44px;
@@ -104,7 +102,7 @@ export function Header(){
         <Menu open={menuOpen}>
 
             <StyledLink to="/Login" isActive={pathname === '/Login'}>
-            SignIn
+            Sign In
             </StyledLink>
         </Menu>
 

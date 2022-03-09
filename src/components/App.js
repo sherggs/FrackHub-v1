@@ -12,8 +12,6 @@ Body{
   color: black;
   font-family: 'Open Sans';
   background-color: #ffff;
-background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ 
 }
 `;
 
