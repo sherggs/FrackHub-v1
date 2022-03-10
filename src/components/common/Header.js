@@ -12,7 +12,7 @@ padding: 0 16px;
 position: fixed;
 top: 0;
 background-image:linear-gradient(to right, #fff,  #ffff);
-border-bottom: 3px solid  #F47806;
+border-bottom: 3px solid  #fff;
 background-color: #FFFF;
 h2{
     color: #F47806;
