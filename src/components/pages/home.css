@@ -1,0 +1,71 @@
+.sidebar {
+    background-color: #f79d49;
+    height: 500px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding-top: 30px;
+    border-radius: 4px;
+    max-width: 400px;
+
+}
+
+.categories {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 99px;
+}
+
+.button-text {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+    font-family: 'Inter', sans-serif;
+
+    color: #000000;
+    font-size: 30px;
+    margin-left: 29px;
+    padding: 16px;
+    /* font-weight: bold; */
+}
+
+.button-text:hover {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+    font-family: 'Inter', sans-serif;
+
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 20px;
+    filter: brightness(0.8)
+
+    /* font-weight: bold; */
+}
+
+.button {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+    font-family: 'Inter', sans-serif;
+    width: 320px;
+    background-color: #ffffff;
+    height: 50px;
+    margin: 29px;
+    text-align: center;
+
+
+}
+
+.button:hover {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+    font-family: 'Inter', sans-serif;    
+    width: 320px;
+    background-color: #f47806;
+    height: 50px;
+    margin: 29px;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 5px;
+
+
+}
+body{
+    padding-top: 70px;
+}

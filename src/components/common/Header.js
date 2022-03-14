@@ -4,6 +4,8 @@ import {Link as ReactRouterDomLink, useLocation} from "react-router-dom";
 
 
 const HeaderWrapper = styled.header`
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+font-family: 'Inter', sans-serif;
 height: 60px;
 width: 100%;
 box-sizing: border-box;
@@ -12,7 +14,7 @@ padding: 0 16px;
 position: fixed;
 top: 0;
 background-image:linear-gradient(to right, #fff,  #ffff);
-border-bottom: 3px solid  #fff;
+border-bottom: 3px solid  #F47806;
 background-color: #FFFF;
 h2{
     color: #F47806;
@@ -22,7 +24,8 @@ h2{
 
 const Menu = styled.nav`
 display: ${p => p.open ? "block" : "none"};
-font-family: "Open Sans";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+font-family: 'Inter', sans-serif;
 position: absolute;
 width: 100%;
 top: 60px;
@@ -43,6 +46,28 @@ background: white ;
     width: initial;
 
 }
+
+button{
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+padding: 8px;
+font-size: 1em;
+padding: 8px;
+background-color: #F47806;
+color: white;
+margin-top: 2px;
+font-size: 14px ;
+border: 1px solid #ccc;
+
+height: 41px;
+width: 94px;
+left: 572px;
+top: 19px;
+border-radius: 200px;
+
+
+
+}
+
 `;
 
 const Link = ({isActive, children, ...props})=> {
@@ -82,6 +107,7 @@ h1{
 
 }
 
+
 `;
 
 
@@ -91,7 +117,7 @@ export function Header(){
     return(
         <HeaderWrapper>
                 <StyledLink to="/" isActive={pathname === '/'}>
-            Home
+           <h3>  Frack Hub</h3>
         </StyledLink>
         <MobileView onClick={() => setMenuOpen(s => !s)}>
             <div />
@@ -102,8 +128,14 @@ export function Header(){
         <Menu open={menuOpen}>
 
             <StyledLink to="/Login" isActive={pathname === '/Login'}>
-            Sign In
+            Sign Up
             </StyledLink>
+            <StyledLink to="/Login" isActive={pathname === '/Login'}>
+            sign In
+            </StyledLink>
+            <button>
+            LEND
+            </button>
         </Menu>
 
         </HeaderWrapper>
